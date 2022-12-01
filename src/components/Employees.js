@@ -1,18 +1,18 @@
 const Employees = [
     {
-        id: '1',
+        Id: '1',
         Name: 'raheem el-assadi',
-        age: '23'
+        Age: '23'
     },
     {
-        id: '2',
+        Id: '2',
         Name: 'alexis el-assadi',
-        age: '23'
+        Age: '23'
     },
     {
-        id: '3',
+        Id: '3',
         Name: 'dog el-assadi',
-        age: '3'
+        Age: '3'
     }
 ]
 
