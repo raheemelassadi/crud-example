@@ -31,24 +31,29 @@ const Home = () => {
                             </tr>
                         </thead>
                         <tbody>
-                            {
-                                Employees && Employees.length > 0 ? 
+                            {   Employees && Employees.length > 0 ? 
                                 Employees.map((item) => {
                                     return(
                                         <tr>
                                             <td>{item.Name}</td>
                                             <td>{item.Age}</td>
                                             <td>
+                                                <Link to={'/edit'}>
                                                 <Button onClick={() => alert(item.Id)}>Edit</Button>
+                                                </Link>
                                                 &nbsp;
                                                 <Button onClick={() => handleDelete(item.Id)}>Delete</Button>
                                             </td>
                                         </tr>
-                                    )
-                                }) : "No data found"
+                                )}) : "No data found"
                             }
                         </tbody>
                     </Table>
+                    <br>
+                    </br>
+                    <Link className="d-grid gap-2" to="/create" >
+                        <Button size="lg">Create</Button>
+                    </Link>
                 </div>
             </Fragment>
         </div>
